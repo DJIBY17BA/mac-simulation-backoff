@@ -9,3 +9,4 @@ class Event:
     time: float
     event_type: str
     station_id: int
+    tx_id: int = 0

@@ -1,12 +1,14 @@
-from station import Station
-from event import Event, ARRIVE, TRY, FINISH
+from simulator import Simulator
 
-s = Station(0, K=5)
+from simulator import Simulator
 
-print("Station :", s.id)
-print("File :", s.queue)
-print("Etat :", s.state)
+sim = Simulator(
+    N=3,
+    K=5,
+    lambd=0.5,
+    tau=0.5,
+    T_max=10,
+    i_max=10
+)
 
-e = Event(2.5, ARRIVE, 0)
-
-print("Event :", e)
+sim.run()

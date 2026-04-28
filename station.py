@@ -8,3 +8,4 @@ class Station:
 
         self.transmitting = False
         self.try_scheduled = False
+        self.current_tx_id = 0
